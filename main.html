@@ -42,7 +42,7 @@
                     <h1 class="text-center">EMPRESA JÚNIOR DE FÍSICA DA UEFS</h1>
 
                     <p class="text-center">
-                        <a href="#" class="btn btn-secondary">Conheça-nos</a>
+                        <a onclick="location.href = '#about';" class="btn btn-secondary">Conheça-nos</a>
                     </p>
                 </div>
 
@@ -52,37 +52,37 @@
     </section>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="main.html">FISICJR</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" onclick="location.href = '#home';" style="cursor: pointer;">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="location.href = '#service';" style="cursor: pointer;">Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="location.href = '#member';" style="cursor: pointer;">Membros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="location.href = '#partner';" style="cursor: pointer;">Parceiros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="location.href = '#contact';" style="cursor: pointer;">Contato</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="main.html">FISICJR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" onclick="location.href = '#home';" style="cursor: pointer;">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" onclick="location.href = '#service';" style="cursor: pointer;">Serviços</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" onclick="location.href = '#member';" style="cursor: pointer;">Membros</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" onclick="location.href = '#partner';" style="cursor: pointer;">Parceiros</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" onclick="location.href = '#contact';" style="cursor: pointer;">Contato</a>
+              </li>
+          </ul>
+      </div>
     </nav>
 
     </section>
     <section class="content-site">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div id="about" class="col-xs-12">
                     <h1 class="text-center">Sobre nós</h1>
 
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur
@@ -99,7 +99,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <div class="caption text-center">
+                        <div id="service" class="caption text-center">
                             <h3>Serviços</h3>
                             <p>Maecenas gravida ut erat quis pretium. Etiam auctor vitae magna vel fringilla. Aliquam
                                 erat volutpat. In placerat nec nibh at auctor. Vivamus iaculis sagittis eleifend. Fusce
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <div class="caption text-center">
+                        <div id="member" class="caption text-center">
                             <h3>Membros</h3>
                             <p>Nulla rutrum enim eu nulla ornare suscipit. Morbi interdum, tellus vitae euismod
                                 ultricies, ante dolor sollicitudin magna, vel elementum ante dolor a nulla.</p>
@@ -123,14 +123,14 @@
 
 
     <section class="second-part-content-site">
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
                 <div class="col-xs-12">
                     <h1 class="text-center">CONTATO</h1>
                     <p class="text-center">
                         <a href="#" class="btn btn-classic">COLOCAR FORMS</a>
                     </p>
-                    <form id="contact">
+                    <form>
                         <div class="col-md-12">
                             <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome"
                                 required>
