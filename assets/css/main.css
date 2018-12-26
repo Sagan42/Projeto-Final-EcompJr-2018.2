@@ -1,0 +1,45 @@
+.header-site {
+    background-image: url(../img/secondBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.positionDesc{
+    margin-top: 300px;
+}
+
+.content-site{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.content-site{
+    background-image: url(../img/midle.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.second-part-content-site{
+    background-image: url(../img/firstBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.footer-site{
+    background-color: #333333;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

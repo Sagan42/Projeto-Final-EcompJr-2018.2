@@ -30,25 +30,40 @@
     <meta name="theme-color" content="#DA0509">
     <!-- Ícone da aba -->
 </head>
-<header>
-    <h1 style='position:absolute; top:0px; left:0px;'>
-        <img src="assets/img/start.jpg" alt="">
-        <logo style='position:absolute; top:110px; left:900px;'>
-            <img src="assets/img/logo.png" height="300" width="300">
-        </logo>
-    </h1>
+
+<body>
+    <section class="header-site">
+        <div class="container">
+            <div class="col-xs-12">
+                <logo style='position:absolute; top:190px; left:370px;'>
+                    <img src="assets/img/logoR.png">
+                </logo>
+                <div class="positionDesc">
+                    <h1 class="text-center">EMPRESA JÚNIOR DE FÍSICA DA UEFS</h1>
+
+                    <p class="text-center">
+                        <a href="#" class="btn btn-secondary">Conheça-nos</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">FISICJR</a>
+        <a class="navbar-brand" href="main.html">FISICJR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active"><a href="#page-top">Home</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="location.href = '#service';" style="cursor: pointer;">Serviços </a>
+                    <a class="nav-link" onclick="location.href = '#home';" style="cursor: pointer;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="location.href = '#service';" style="cursor: pointer;">Serviços</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="location.href = '#member';" style="cursor: pointer;">Membros</a>
@@ -63,26 +78,91 @@
         </div>
     </nav>
 
-<!-- para as partes que serão direcionadas no navbar-->
-    <section id="service">
+    </section>
+    <section class="content-site">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Sobre nós</h1>
+
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur
+                        lorem
+                        ut ipsum viverra blandit. Etiam non ligula non velit facilisis ultricies. Pellentesque tempor
+                        urna
+                        eget sollicitudin consectetur. Vestibulum vitae mi at ex blandit tempor. Sed ut blandit nibh.
+                        Pellentesque in nulla lobortis, elementum neque eget, pulvinar nunc. Integer nec aliquam elit.
+                        Donec risus odio, venenatis eget venenatis vitae, tincidunt dignissim neque. Integer quis
+                        malesuada
+                        augue, non pretium metus.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="caption text-center">
+                            <h3>Serviços</h3>
+                            <p>Maecenas gravida ut erat quis pretium. Etiam auctor vitae magna vel fringilla. Aliquam
+                                erat volutpat. In placerat nec nibh at auctor. Vivamus iaculis sagittis eleifend. Fusce
+                                justo turpis, vehicula ac tortor eu, mollis volutpat risus. Praesent lorem lorem,
+                                bibendum eget lacus non, iaculis cursus urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="caption text-center">
+                            <h3>Membros</h3>
+                            <p>Nulla rutrum enim eu nulla ornare suscipit. Morbi interdum, tellus vitae euismod
+                                ultricies, ante dolor sollicitudin magna, vel elementum ante dolor a nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="member">
+
+    <section class="second-part-content-site">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">CONTATO</h1>
+                    <p class="text-center">
+                        <a href="#" class="btn btn-classic">COLOCAR FORMS</a>
+                    </p>
+                    <form id="contact">
+                        <div class="col-md-12">
+                            <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome"
+                                required>
+                            <input id="email" class="form-control" name="email" type="email" placeholder="Seu email"
+                                required>
+                            <input id="subject" class="form-control" name="subject" type="text" placeholder="Assunto"
+                                required>
+                            <textarea id="message" class="form-control" name="message" placeholder="Sua mensagem" rows="4"
+                                required></textarea>
+                            <div id="submit">
+                                <button id="send_message" type="submit" class="btn btn-sm btn-default full-width btn-effect">Enviar
+                                    mensagem</button>
+                            </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="partner">
+    <section class="footer-site">
+        <div class="container">
+            <logo style='position:relative; left:520px;'>
+                <img src="assets/img/icon/android-icon-72x72.png">
+            </logo>
+
+            <div class="col-xs-12">
+                <p class="text-center">Copyright © FISICJR. 2019</p>
+            </div>
+        </div>
     </section>
-
-    <section id="contact">
-    </section>
-
-</header>
-
-
-<body>
 </body>
-
-<footer>
-</footer>
 
 </html>
