@@ -31,13 +31,43 @@
     <!-- Ícone da aba -->
 </head>
 
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <ul class="ml-5">
+            <a class="navbar-brand" href="main.html">FISICJR</a>
+        </ul>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item">
+                    <a class="nav-link" href='#home'>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='#service'>Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='#member'>Membros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='#partner'>Parceiros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='#contact'>Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
 <body>
     <section class="header-site">
         <div class="container">
             <div class="col-xs-12">
-                <logo style='position:absolute; top:190px; left:370px;'>
-                    <img src="assets/img/logoWhite.png">
-                </logo>
+
+                <img class="centralImageLogoStart" src="assets/img/logoWhite.png">
+
                 <div class="positionDesc">
                     <h1 class="text-center">EMPRESA JÚNIOR DE FÍSICA DA UEFS</h1> </br>
 
@@ -50,31 +80,6 @@
 
         </div>
     </section>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-        <a class="navbar-brand" href="main.html">FISICJR</a>
-
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href = '#home'>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href = '#service'>Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href = '#member'>Membros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href = '#partner'>Parceiros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href = '#contact'>Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
     </section>
     <section class="content-site">
@@ -119,81 +124,78 @@
         </div>
     </section>
 
-
-    <section class="second-part-content-site">
+    <section class="contato-area">
         <div class="container" id="contact">
-            <div class="row">
-                <div class="col-xs-12">
-                  <h1 class="text-center">CONTATO</h1>
-                  <div class="endereço" style="text-align:left">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div style="visibility: visible; animation-name: fadeInLeft;" class="col-lg-6 col-sm-7 wow fadeInLeft animated">
-                            <div>
-                              <h3><i class="fa fa-map-marker"></i> Endereço:</h3>
-                              <span>UEFS - Avenida Transnordestina, s/nº - LABOFIS, Novo Horizonte, Feira de Santana - BA, 44036-900</span>
-                            </div>
-                            <div >
-                              <h3><i class="fa fa-phone"></i> Telefone:</h3>
-                              <span>(75) 1111-1111</span>
-                            </div>
-                            <div>
-                              <h3><i class="fa fa-envelope"></i> email:</h3>
-                              <span>fisicjr@uefs.br</span>
-                            </div>
-                            <div>
-                              <h3><i class="fa fa-clock-o"></i> Horários:</h3>
-                              <span><strong>Segunda</strong> - das 7:30 às 17:30</span><br>
-                              <span><strong>Terça</strong> - das 7:30 às 17:30</span><br>
-                              <span><strong>Quarta</strong> - das 7:30 às 18:30</span><br>
-                              <span><strong>Quinta</strong> - das 13:30 às 18:00</span><br>
-                              <span><strong>Sexta</strong> - das 8:00 às 15:30</span><br><br>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img src="assets\img\einstein.png" align="bottom" width="150px" height="150px" margin-top="5%" left: "10%">
-                  </div>
-                  <form id="formulario">
-                    <h2>Deixe sua mensagem</h2>
-                    <div class="col-md-8">
-                      <label for="exampleInputName">Nome</label>
-                      <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome"
-                            required>
-                      <label for="exampleInputEmail">Email</label>
-                      <input id="email" class="form-control" name="email" type="email" placeholder="Seu email"
-                            required>
-                      <label for="exampleInputText">Assunto</label>
-                      <input id="subject" class="form-control" name="subject" type="text" placeholder="Assunto"
-                            required>
-                      <label for="exampleInputMessage">Mensagem</label>
-                      <textarea id="message" class="form-control" name="message" placeholder="Sua mensagem" rows="4"
-                            required></textarea>
-                      <div id="submit">
-                        <br>
-                        <button id="send_message" type="submit" class="btn btn-sm btn-default full-width btn-effect">Enviar
-                            mensagem</button>
-                      </div>
-                    </div>
-                  </form>
-              </div>
-            </div>
-          </div>
-    </section>
 
+            <img class="centralImage" src="assets/img/contato.png">
+            <img src="assets/img/einstein.png" style="position: absolute;" height="450px" width="450px">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <h3> Endereço:</h3>
+                        UEFS - Avenida Transnordestina, s/nº - LABOFIS, Novo Horizonte,
+                        Feira de Santana - BA, 44036-900
+                    </div>
+                    <div>
+                        <h3>Telefone:</h3>
+                        (75) 1111-1111
+                    </div>
+                    <div>
+                        <h3>Email:</h3>
+                        fisicjr@uefs.br
+                    </div>
+                    <div>
+                        <h3>Horários:</h3>
+                        <strong>Segunda</strong> - das 7:30 às 17:30<br>
+                        <strong>Terça</strong> - das 7:30 às 17:30<br>
+                        <strong>Quarta</strong> - das 7:30 às 18:30<br>
+                        <strong>Quinta</strong> - das 13:30 às 18:00<br>
+                        <strong>Sexta</strong> - das 8:00 às 15:30<br><br>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 offset-md-2">
+                    <form id="formulario">
+                        <h2>Deixe sua mensagem</h2>
+                        <div class="col-md-8">
+                            <label>Nome</label>
+                            <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome"
+                                required>
+                            <label>Email</label>
+                            <input id="email" class="form-control" name="email" type="email" placeholder="Seu email"
+                                required>
+                            <label>Assunto</label>
+                            <input id="subject" class="form-control" name="subject" type="text" placeholder="Assunto"
+                                required>
+                            <label>Mensagem</label>
+                            <textarea id="message" class="form-control" name="message" placeholder="Sua mensagem" rows="4"
+                                required>
+                                                        </textarea>
+                            <br>
+                            <button id="send_message" type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+
+<footer>
     <section class="footer-site">
         <div class="container">
-            <logo style='position:relative; left:520px;'>
-                <img src="assets/img/icon/android-icon-72x72.png">
-            </logo>
+            <img class="centralImage" src="assets/img/icon/android-icon-72x72.png">
 
             <div class="col-xs-12">
                 <p class="text-center">Copyright © FISICJR. 2019</p>
             </div>
         </div>
     </section>
-</body>
+
+</footer>
 
 </html>

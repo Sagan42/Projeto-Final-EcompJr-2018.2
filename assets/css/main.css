@@ -1,3 +1,4 @@
+/* Para primeira imagem de fundo, efeito Parallax. */
 .header-site {
     background-image: url(../img/secondBackground.jpg);
     background-position: center top;
@@ -8,15 +9,17 @@
     padding-top: 130px;
     padding-bottom: 130px;
 }
+/* Para primeira imagem de fundo, efeito Parallax. */
 
+
+/* Para posição da descrição da FISICJR. */
 .positionDesc{
-    margin-top: 300px;
+    margin-top: 20px;
 }
+/* Para posição da descrição da FISICJR. */
 
-.content-site{
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
+/* Para segunda imagem de fundo, efeito Parallax. */
 .content-site{
     background-image: url(../img/midle.jpg);
     background-position: center top;
@@ -24,36 +27,51 @@
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
+/* Para segunda imagem de fundo, efeito Parallax. */
 
-.second-part-content-site{
+
+/* Para terceira imagem de fundo, efeito Parallax. */
+.contato-area{
     background-image: url(../img/firstBackground.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 50px;
+    padding-bottom: 550px;
 }
+/* Para terceira imagem de fundo, efeito Parallax. */
 
-/*Altera a fonte de letra da caixa do formulario*/
-.form-control{
-  font-style:bold;
-  font-family: “Segoe UI”,”Arial”,”Times New Roman”;
+
+/* Centralizar imagem. */
+.centralImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+/* Centralizar imagem. */
 
-#formulario{
-  margin-left: 750px;
-  margin-bottom: 100px;
-  padding: 60px;
-  width: 60%;
-  margin-top: 5%;
+
+/* Centralizar imagem, caso especial do logo inicial. */
+.centralImageLogoStart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
 }
+/* Centralizar imagem, caso especial do logo inicial. */
 
+
+/* Definições do rodapé. */
 .footer-site{
     background-color: #333333;
     color: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/* Definições do rodapé. */
+
