@@ -124,30 +124,63 @@
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="text-center">CONTATO</h1>
-                    <p class="text-center">
-                        <a href="#" class="btn btn-classic">COLOCAR FORMS</a>
-                    </p>
-                    <form>
-                        <div class="col-md-12">
-                            <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome"
-                                required>
-                            <input id="email" class="form-control" name="email" type="email" placeholder="Seu email"
-                                required>
-                            <input id="subject" class="form-control" name="subject" type="text" placeholder="Assunto"
-                                required>
-                            <textarea id="message" class="form-control" name="message" placeholder="Sua mensagem" rows="4"
-                                required></textarea>
-                            <div id="submit">
-                                <button id="send_message" type="submit" class="btn btn-sm btn-default full-width btn-effect">Enviar
-                                    mensagem</button>
+                  <h1 class="text-center">CONTATO</h1>
+                  <div class="endereço" style="text-align:left">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div style="visibility: visible; animation-name: fadeInLeft;" class="col-lg-6 col-sm-7 wow fadeInLeft animated">
+                            <div>
+                              <h3><i class="fa fa-map-marker"></i> Endereço:</h3>
+                              <span>UEFS - Avenida Transnordestina, s/nº - LABOFIS, Novo Horizonte, Feira de Santana - BA, 44036-900</span>
                             </div>
+                            <div >
+                              <h3><i class="fa fa-phone"></i> Telefone:</h3>
+                              <span>(75) 1111-1111</span>
+                            </div>
+                            <div>
+                              <h3><i class="fa fa-envelope"></i> email:</h3>
+                              <span>fisicjr@uefs.br</span>
+                            </div>
+                            <div>
+                              <h3><i class="fa fa-clock-o"></i> Horários:</h3>
+                              <span><strong>Segunda</strong> - das 7:30 às 17:30</span><br>
+                              <span><strong>Terça</strong> - das 7:30 às 17:30</span><br>
+                              <span><strong>Quarta</strong> - das 7:30 às 18:30</span><br>
+                              <span><strong>Quinta</strong> - das 13:30 às 18:00</span><br>
+                              <span><strong>Sexta</strong> - das 8:00 às 15:30</span><br><br>
+                            </div>
+                          </div>
                         </div>
-                </div>
-                </form>
+                      </div>
+                    </div>
+                    <img src="assets\img\einstein.png" align="bottom" width="150px" height="150px" margin-top="5%" left: "10%">
+                  </div>
+                  <form id="formulario">
+                    <h2>Deixe sua mensagem</h2>
+                    <div class="col-md-8">
+                      <label for="exampleInputName">Nome</label>
+                      <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome"
+                            required>
+                      <label for="exampleInputEmail">Email</label>
+                      <input id="email" class="form-control" name="email" type="email" placeholder="Seu email"
+                            required>
+                      <label for="exampleInputText">Assunto</label>
+                      <input id="subject" class="form-control" name="subject" type="text" placeholder="Assunto"
+                            required>
+                      <label for="exampleInputMessage">Mensagem</label>
+                      <textarea id="message" class="form-control" name="message" placeholder="Sua mensagem" rows="4"
+                            required></textarea>
+                      <div id="submit">
+                        <br>
+                        <button id="send_message" type="submit" class="btn btn-sm btn-default full-width btn-effect">Enviar
+                            mensagem</button>
+                      </div>
+                    </div>
+                  </form>
+              </div>
             </div>
-        </div>
-        </div>
+          </div>
     </section>
 
     <section class="footer-site">

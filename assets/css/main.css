@@ -37,6 +37,20 @@
     padding-bottom: 250px;
 }
 
+/*Altera a fonte de letra da caixa do formulario*/
+.form-control{
+  font-style:bold;
+  font-family: “Segoe UI”,”Arial”,”Times New Roman”;
+}
+
+#formulario{
+  margin-left: 750px;
+  margin-bottom: 100px;
+  padding: 60px;
+  width: 60%;
+  margin-top: 5%;
+}
+
 .footer-site{
     background-color: #333333;
     color: #ffffff;
