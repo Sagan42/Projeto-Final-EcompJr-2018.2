@@ -1,6 +1,6 @@
 /* Para primeira imagem de fundo, efeito Parallax. */
 .header-site {
-    background-image: url(../img/secondBackground.jpg);
+    background-image: url(../img/homeBackground.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,32 +19,76 @@
 /* Para posição da descrição da FISICJR. */
 
 
-/* Para segunda imagem de fundo, efeito Parallax. */
-.content-site{
-    background-image: url(../img/midle.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #ffffff;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-/* Para segunda imagem de fundo, efeito Parallax. */
-
-
-/* Para terceira imagem de fundo, efeito Parallax. */
-.contato-area{
-    background-image: url(../img/firstBackground.jpg);
+/* Para a parte "sobre", imagem de fundo, efeito Parallax. */
+.content-site-about{
+    background-image: url(../img/aboutBackground.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
     padding-top: 50px;
-    padding-bottom: 550px;
+    padding-bottom: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
-/* Para terceira imagem de fundo, efeito Parallax. */
+/* Para a parte "sobre", imagem de fundo, efeito Parallax. */
+
+
+/* Para a parte "serviços", imagem de fundo, efeito Parallax. */
+.content-site-services{
+    background-image: url(../img/servicesBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+/* Para a parte "serviços", imagem de fundo, efeito Parallax. */
+
+
+/* Para a parte "membros", imagem de fundo, efeito Parallax. */
+.content-site-membros{
+    background-image: url(../img/memberBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Para a parte "membros", imagem de fundo, efeito Parallax. */
+
+
+/* Para a parte "parceiros", imagem de fundo, efeito Parallax. */
+.content-site-partner{
+    background-image: url(../img/partnerBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+/* Para a parte "parceiros", imagem de fundo, efeito Parallax. */
+
+
+/* Para parte "contato" imagem de fundo, efeito Parallax. */
+.content-site-contact{
+    background-image: url(../img/contactBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+/* Para a parte "contato" imagem de fundo, efeito Parallax. */
 
 
 /* Centralizar imagem. */
@@ -66,12 +110,28 @@
 /* Centralizar imagem, caso especial do logo inicial. */
 
 
+/* Bola */
+.serv_i {
+    border-radius: 50%;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #000000;
+    background-color: rgb(3, 1, 136);
+    box-shadow: inset -10px -10px 10px rgb(0, 0, 0), inset 3px 3px 5px #FFF;
+    text-align: center;
+    line-height: 225px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+/* Bola */
+
+
 /* Definições do rodapé. */
 .footer-site{
     background-color: #333333;
     color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 /* Definições do rodapé. */
-
