@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -37,13 +41,13 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <ul class="ml-5">
-            <a class="navbar-brand" href="main.html">FISICJR</a>
+            <a class="navbar-brand" href="main.php">FISICJR</a>
         </ul>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto mr-5">
                 <li class="nav-item">
-                    <a class="nav-link" href="main.html">Home</a>
+                    <a class="nav-link" href="main.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href='#services'>Serviços</a>
@@ -57,6 +61,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href='#contact'>Contato</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login_index.php">Login</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -67,14 +74,20 @@
     <section class="header-site">
         <div class="container">
             <div class="col-xs-12">
-
                 <img class="centralImageLogoStart" src="assets/img/logoWhite.png">
 
                 <div class="positionDesc">
-                    <h1 class="text-center">EMPRESA JÚNIOR DE FÍSICA DA UEFS</h1> </br>
+                    <h1 class="text-center">EMPRESA JÚNIOR DE FÍSICA DA UEFS</h1> <br>
 
                     <p class="text-center">
-                        <a onclick="location.href = '#about';" class="btn btn-secondary">Conheça-nos</a>
+                        <a onclick="location.href = '#about';" class="btn btn-dark">
+                        <?php 
+                            if(isset($_SESSION['nome'])){
+                                echo $_SESSION['nome'].',';
+                            }
+                        ?>
+                        Conheça-nos
+                        </a>
                     </p>
                 </div>
 
@@ -247,7 +260,7 @@
 
 
                 <div class="col-md-6 offset-md-2">
-                    <form id="formulario">
+                    <form action="back/php/message/message.php" method="POST" id="formulario">
                         <h2>Deixe sua mensagem</h2>
                         <div class="col-md-8">
                             <label>Nome</label>
@@ -287,4 +300,5 @@
     </section>
 
 </footer>
+
 </html>

@@ -1,0 +1,30 @@
+.count_make{
+    text-align: right;
+    font-family: cursive;
+    color: white;
+}
+
+.title{
+    text-align: center;
+    margin-top: 8%;
+    font-family: cursive;
+    color: white;
+}
+
+body{
+    background-image: url(../../assets/img/login_indexBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    margin: auto;
+}
+
+.notification{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}

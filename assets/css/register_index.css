@@ -1,0 +1,19 @@
+body{
+    background-image: url(../../assets/img/register_indexBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    text-align: center;
+    margin-top: 8%;
+    font-family: cursive;
+    color: white;
+}
+
+.notification{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
