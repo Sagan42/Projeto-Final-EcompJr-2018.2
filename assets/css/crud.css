@@ -1,0 +1,15 @@
+body{
+    background-image: url(../../assets/img/crudBackground.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    text-align: center;
+    margin-top: 2%;
+    font-family: cursive;
+    font-size: 100%;
+    color: black;
+}

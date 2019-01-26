@@ -215,6 +215,17 @@ session_start();
                 </a>
             </div>
         </div>
+        <br>
+        <div class="row justify-content-center">
+            <script>
+                function memberPag() {
+                    location.href = "memberPag.php";
+                }
+            </script>
+            <?php
+                echo '<button type="button" class="btn btn-dark" onClick="memberPag()">Confira a relação completa de membros</button>';
+            ?>
+        </div>
     </section>
 
     <section class="content-site-partner">
@@ -298,7 +309,6 @@ session_start();
             </div>
         </div>
     </section>
-
 </footer>
 
 </html>

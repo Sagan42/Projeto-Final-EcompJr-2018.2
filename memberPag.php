@@ -1,17 +1,13 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>login_index</title>
+    <title>Membros FISICJR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="vendor/bootstrap-4.1.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/login_index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/memberPag.css" />
     <script src="main.js"></script>
 
     <!-- Ícone da aba -->
@@ -36,63 +32,42 @@ session_start();
 
 </head>
 
+<header>
+    <div class="title">
+        FISICJR
+        <h3>Membros</h3>
+    </div>
+</header>
+
 <body>
     <?php
-        if(isset($_SESSION['nome'])){
-            header('Location:back/php/login/painel.php');
-        }
+        $mysqli = new mysqli('localhost', 'root', '', 'login') or die(mysqli_error($mysqli));
+        $result = $mysqli->query("SELECT * FROM crud") or die($mysqli->error);
     ?>
-
-    <div class="count_make">
-        <h5>Não possui uma conta?</h5>
-        <script>
-            function cadastro() {
-                location.href = "register_index.php";
-            }
-        </script>
-        <?php
-            echo '<button type="button" class="btn btn-success btn-sm" onClick="cadastro()">Register</button>';
-        ?>
-    </div>
-
-    <div class="title">
-        <h1>Sistema de Login</h1>
-        <h2>FISICJR</h2> <br>
-    </div>
     <div class="container">
-        <div class="col-md-6 offset-md-3">
-            <?php
-                if(isset($_SESSION['nao_autenticado'])):
-            ?>
-            <div class="notification">
-                <div class="alert alert-danger" role="alert">
-                    ERRO: Usuário ou Senha inválidos.
-                </div>
-            </div>
-            <?php
-                endif;
-                unset($_SESSION['nao_autenticado']);
-            ?>
-            <form action="back/php/login/login.php" method="POST">
-
-                <div class="form-group">
-                    <input name="usuario" name="text" class="form-control" placeholder="Seu usuário" autofocus=""> <br>
-                    <input name="senha" class="form-control" type="password" placeholder="Sua senha">
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button> 
-            </form>
-            <script>
-                function voltar() {
-                    location.href = "main.php";
-                }
-            </script>
-            <?php
-                echo '<button type="button" class="btn btn-dark btn-lg btn-block" onClick="voltar()">Voltar para site</button>';
-            ?>
+        <div class="row justify-content-center">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <?php
+                    while ($row =$result->fetch_assoc()):
+                    ?>
+                <tr>
+                    <td>
+                        <?php echo $row['nome']; ?>
+                    </td>
+                    <td>
+                        <?php echo $row['cargo']; ?>
+                    </td>
+                </tr>
+                <?php endwhile; ?>
+            </table>
         </div>
-
     </div>
-
 </body>
+
 </html>

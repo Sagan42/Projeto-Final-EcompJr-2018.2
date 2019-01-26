@@ -4,6 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,43 +34,45 @@ session_start();
     <!-- Ícone da aba -->
 
 </head>
+
 <body>
-<div class="title">
+    <div class="title">
         <h1>Sistema de Cadastro</h1>
         <h2>FISICJR</h2> <br>
     </div>
 
-    <?php
+    <div class="container">
+        <?php
         if(isset($_SESSION['status_cadastro'])):
     ?>
-    <div class="notification is-success">
-        <div class="notification">
-            <div class="alert alert-success" role="alert">
-                <p>Cadastro efetuado!</p>
-                <p>Faça login informando o seu usuário e senha <a href="login_index.php">aqui</a></p>
+        <div class="notification is-success">
+            <div class="notification">
+                <div class="alert alert-success" role="alert">
+                    <p>Cadastro efetuado!</p>
+                    <p>Faça login informando o seu usuário e senha <a href="login_index.php">aqui</a></p>
+                </div>
             </div>
         </div>
-    </div>
-    <?php
+        <?php
         endif;
         unset($_SESSION['status_cadastro']);
     ?>
 
-    <?php
+        <?php
         if(isset($_SESSION['usuario_existe'])):
     ?>
-    <div class="notification is-info">
-        <div class="notification">
-            <div class="alert alert-danger" role="alert">
-                <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
+        <div class="notification is-info">
+            <div class="notification">
+                <div class="alert alert-danger" role="alert">
+                    <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <?php
+        <?php
         endif;
         unset($_SESSION['usuario_existe']);
     ?>
-
+    </div>
     <div class="container">
         <div class="col-md-6 offset-md-3">
             <form action="back/php/register/register.php" method="POST">
@@ -84,4 +87,5 @@ session_start();
 
     </div>
 </body>
+
 </html>

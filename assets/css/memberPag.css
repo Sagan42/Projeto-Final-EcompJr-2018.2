@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../assets/img/register_indexBackground.jpg);
+    background-image: url(../../assets/img/memberPagBackground.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,12 +8,16 @@ body{
 
 .title{
     text-align: center;
-    margin-top: 8%;
+    margin-top: 2%;
     font-family: cursive;
+    font-size: 400%;
     color: white;
 }
 
-.notification{
+.container{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2%;
+    font-family: cursive;
+    font-size: 130%;
+    color: white;
 }
